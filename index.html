@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/font-awesome/css/font-awesome.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Programa de capacitación de equipos técnicos</title>
+    
+</head>
+<body class="" data-bs-theme="light">
+    <header class="p-2">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top" id="navbar-scrollSpy" data-bs-theme="dark">
+            <div class="container">
+                
+                <a class="navbar-brand text-white" href="#"> </a>                      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.malvinasargentinas.gob.ar/" target="_blank"><i class="bi bi-globe"></i> Portal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://capacita.malvinasargentinas.ar/" target="_blank"><i class="bi bi-person-workspace"></i> Capacitación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://biblioteca.malvinasargentinas.ar/digital/" target="_blank"><i class="bi bi-book"></i> Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.malvinasargentinas.gob.ar/apps/legislacion/" target="_blank"><i class="fa fa-legal"></i> Legislación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.malvinasargentinas.gob.ar/web/_docs/directorio.pdf" target="_blank"><i class="bi bi-journal"></i> Directorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.malvinasargentinas.gob.ar/apps/mapaestado/" target="_blank"><i class="bi bi-diagram-3"></i> Mapa de Estado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.malvinasargentinas.gob.ar/apps/servicios/index.php" target="_blank"><i class="bi bi-clipboard-check"></i> Guia de Servicios</a>
+                        </li>
+                        <div class="vr d-none d-lg-block"></div>
+                        <li class="nav-item">
+                            <button onclick="cambiarTema()" class="btn rounded-fill">
+                                <i id="dl-icon" class="bi bi-moon-fill"></i> 
+                                <span id="dl-span" class="d-lg-none text-white">Modo Oscuro</span>
+                            </button>
+                        </li>
+                        
+                        <!-- MENU MODO OSCURO -->
+                        <!-- <li class="nav-item dropdown d-flex flex-column justify-content-center align-items-center">
+                            <button class="btn  nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+                                <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
+                                <span class="d-lg-none ms-2" id="bd-theme-text">MODO</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                                        <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                                        Claro
+                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                        <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                                        Oscuro
+                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                        <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                                        Auto
+                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="top d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-center fw-bold">Programa de capacitación de equipos técnicos</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container pt-5">
+            <h2 class="ps-3 py-1">AGENDA</h2>
+            <div class="ps-3">
+                <div class="ps-3 bg-success py-1 w-25"></div>
+            </div>
+            
+            <div class="py-3">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- ITEM 1-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                <span class="fs-5 fw-bold">Miércoles 17 de mayo 14 hs</span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Apertura del programa en el Auditorio municipal.
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 2-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                <span class="fs-5 fw-bold">
+                                    Miércoles 19 de mayo 14hs. 
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- 
+                                <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> 
+                                -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h3 class="fw-bold">
+                                    Régimen municipal
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Noción de municipio y Autonomía municipal
+                                    </li>
+                                    <li>
+                                        Competencia municipal
+                                    </li>
+                                    <li>
+                                        Poder de policía municipal
+                                    </li>
+                                    <li>
+                                        Constitución y funciones del Departamento Deliberativo
+                                    </li>
+                                    <li>
+                                        Constitución y funciones del Departamento Ejecutivo
+                                    </li>
+                                    <li>
+                                        Auxiliares del Intendente
+                                    </li>
+                                    <li>
+                                        Sistema contravencional municipal
+                                    </li>
+                                    <li>
+                                        Sanción, promulgación y veto de ordenanzas
+                                    </li>
+                                    <li>
+                                        Mayores contribuyentes
+                                    </li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de EL MUNICIPIO)
+                                    <a href="https://capacita.malvinasargentinas.ar/cursos/programa-de-equipos-tecnicos/" target="_blank">Curso</a>
+                                </p>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital y sección de legislación municipal)
+                                </h4>
+
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/digesto/VOL1-LeyOrganicaMunicipal.pdf" target="_blank"><i class="bi bi-paperclip"></i>Volumen 1 del Digesto Municipal: Ley orgánica de las municipalidades.</a>
+                                        
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/digesto/VOL20-ReglamentoInternoHCD.pdf" target="_blank"><i class="bi bi-paperclip"></i>Volumen 20 del Digesto Municipal: Reglamento del HCD</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/gobierno/GOB_salud_malvinas_argentinas.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i>Cuadernillo Salud en Malvinas Argentinas</a>
+                                    </li>
+                                </ul>
+                                <h3 class="fw-bold">Panelistas</h3>
+                                <p>
+                                    Paulina Santti - Graciela Córdoba - Javier Luque - Jorge Spárvoli
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 3-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                <span class="fs-5 fw-bold">
+                                    Martes 23 de mayo 14hs. 
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Procedimientos administrativos</h4>
+                                <ul>
+                                    <li>Concepto y naturaleza del procedimiento administrativo</li>
+                                    <li>Clasificación de procedimientos administrativos</li>
+                                    <li>Garantías del procedimiento administrativo</li>
+                                    <li>Circuito general de notas y expedientes</li>
+                                </ul>
+                                <h4 class="fw-bold">Diseño de Circuitos Administrativos</h4>
+                                <ul>
+                                    <li>Decreto 2239/21</li>
+                                    <li>Formulación del circuito</li>
+                                    <li>Formato del circuito</li>
+                                </ul>
+                                <p>
+                                    (Hay en elaboración un curso autogestionado de Procedimiento administrativo y circuitos administrativos)
+                                </p>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL7-ProcedimientoAdministrativoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 7 del Digesto Municipal: Procedimiento administrativo</li>
+                                        </a>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/Vol_28A_Circuitos_Administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 28 A del Digesto Municipal: Diseño de circuitos administrativos.
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_procedimientos_administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Procedimiento Administrativo
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Javier Luque - Paulina Santti - Adriana Carrizo - Jorge Spárvoli - Verónica Anzoátegui
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 4-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                <span class="fs-5 fw-bold">Miércoles 31 de mayo 14hs</span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Contrataciones y subsidios</h4>
+                                <ul>
+                                    <li>Actos preparatorios a la solicitud de pedido</li>
+                                    <li>Generación de una orden de compra</li>
+                                    <li>Compra directa excepcional</li>
+                                    <li>Concurso de precios</li>
+                                    <li>Licitaciones</li>
+                                    <li>Subsidios</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de Contrataciones)
+                                </p>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)
+                                </h4>
+                                
+                                
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/Vol_28B_Circuitos_Administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 28 B del Digesto Municipal: Circuitos administrativos
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL22-RegimenEconomicoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 22 del Digesto Municipal: Régimen económico
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_12_convenios_contrataciones.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROAA Sistema de contratación
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_6_gestion_economica.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROAA Gestión económica
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Sergio Sosa - Graciela Córdoba - Funcionarios a designar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 5-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 2 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Expedientes administrativos</h4>
+                                <ul>
+                                    <li>Concepto y formalidades de un expediente administrativo</li>
+                                    <li>Incidencias de un expediente</li>
+                                    <li>Cuerpos, alcances y agregados</li>
+                                    <li>Registro de los movimientos del expediente</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de expedientes
+                                administrativos)
+                                </p>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)
+                                </h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL7-ProcedimientoAdministrativoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 7 del Digesto Municipal: Procedimiento administrativo
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_9_expedientes_municipales.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROAA Expedientes
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Gustavo Hegoburu - Paulina Santi - Jorge Spárvoli
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 6-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                <span class="fs-5 fw-bold">
+                                    Lunes 5 de junio
+                                </span>
+                                <i class="ms-2 text-info bi bi-exclamation-circle-fill"></i>
+                                <!-- <span class="bi-info-circle-fill badge rounded-pill text-bg-info ms-1">
+                                    A CONFIRMAR
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3 class="fw-bold"><i class="ms-2 text-info bi bi-exclamation-circle-fill"></i> Lugar y fecha a confirmar</h3>
+                                <h4 class="fw-bold">Redacción administrativa</h4>
+                                <ul>
+                                    <li>Estilo administrativo</li>
+                                    <li>Lenguaje claro</li>
+                                    <li>Actuaciones administrativas de uso frecuente</li>
+                                    <li>Plantillas</li>
+                                </ul>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_7_redaccion_administrativa.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Redacción Administrativa
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_8_modelos_formularios_plantillas.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Plantillas redacción administrativas
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/PLANTILLAS-ADMINISTRATIVAS.zip" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Plantillas en ZIP para descargar
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_8_modelos_formularios_plantillas.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de Modelos, Formularios y plantillas
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/DC-CUR-SAIJ.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo SAIJ de Lenguaje claro
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Paulina Santti - Graciela Córdoba - Jorge Spárvoli
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 7-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                <span class="fs-5 fw-bold">
+                                    Miércoles 7 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Técnica legislativa</h4>
+                                <ul>
+                                    <li>Actos generales</li>
+                                    <li>Procedimiento para la confección de actos generales</li>
+                                    <li>Reglas de técnica legislativa</li>
+                                </ul>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/TECNICA-LEGISLATIVA-MUNICIPAL.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Técnica legislativa
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Javier Luque - Jorge Spárvoli
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 8-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 9 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Actos administrativos</h4>
+                                <ul>
+                                    <li>Definición y elementos de un acto administrativo</li>
+                                    <li>Caracteres de un acto administrativo</li>
+                                    <li>Competencia y procedimiento</li>
+                                    <li>Reglas para la redacción de un acto administrativo</li>
+                                    <li>Registro y notificación de un acto administrativo</li>
+                                    <li>Revocación de un acto administrativo</li>
+                                    <li>Recursos administrativos</li>
+                                    <li>Procedimiento contencioso administrativo</li>
+                                </ul>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_11_actos_administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de Actos administrativos
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_redaccion_actos_administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de Redacción de actos administrativos
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_14_recursos_administrativos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de Recursos administrativos
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_19_notificaciones.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de Notificaciones
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL7-ProcedimientoAdministrativoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 7 del Digesto: Procedimiento administrativo
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Paulina Santti - Javier Luque - Adriana Carrizo - Jorge Spárvoli
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 9-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                                <span class="fs-5 fw-bold">
+                                    Lunes 12 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Convenios</h4>
+                                <ul>
+                                    <li>Naturaleza jurídica de un contrato administrativo</li>
+                                    <li>Procedimiento y contenido de un convenio municipal</li>
+                                </ul>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)
+                                </h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL7-ProcedimientoAdministrativoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 7 del Digesto: Procedimiento administrativo
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_12_convenios_contrataciones.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA sobre convenios y contrataciones
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Paulina Santti - Javier Luque
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 10-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                                <span class="fs-5 fw-bold">
+                                    Miércoles 14 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Atención al público</h4>
+                                <ul>
+                                    <li>Protocolo de atención en la oficina</li>
+                                    <li>Protocolo de atención fuera de la oficina</li>
+                                    <li>Protocolo de atención telefónica</li>
+                                    <li>Protocolo de atención digital</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de Atención al vecino)
+                                </p>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)
+                                </h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_atencion_vecino.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Manual de atención al público (Capacitación inicial)
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_16_atencion_publico.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA sobre Atención al público
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_a_v_salud.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Servicio de atención al vecino en sistema de salud
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Información municipal</h4>
+                                <ul>
+                                    <li>Portal Municipal</li>
+                                    <li>Información legislativa</li>
+                                    <li>Guía de servicios</li>
+                                    <li>Sistemas de Reclamo</li>
+                                    <li>Directorio Telefónico</li>
+                                    <li>Biblioteca digital</li>
+                                    <li>Circular de Novedades</li>
+                                </ul>
+                                <p>
+                                    <!-- <i class="bi bi-file-pdf-fill"></i> -->
+                                    (Hay en elaboración un curso autogestionado de Información municipal) <span class="btn btn-primary"><i class="bi bi-play-circle"></i> PRÓXIMAMENTE</span>
+                                </p>
+                                
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Susana Bergonzi - Viviana Acevedo - Verónica Anzoátegui - Adriana Carrizo - Ariel Robles - Cristian Robles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 11-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 16 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Caja chica</h4>
+                                <ul>
+                                    <li>Concepto de caja chica</li>
+                                    <li>Gastos incluidos y excluidos</li>
+                                    <li>Procedimiento de apertura y de rendición</li>
+                                    <li>Concepto y rendición de cargos a rendir y reintegro de
+                                gastos</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de caja chica)
+                                </p>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_PROAA_6_gestion_economica.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo PROA de gestión económica
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL22-RegimenEconomicoMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 22 del Digesto: Régimen económico
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Graciela Córdoba - Funcionarios a designar
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 12-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+                                <span class="fs-5 fw-bold">
+                                    Miércoles 21 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Patrimonio municipal</h4>
+                                <ul>
+                                    <li>Concepto de patrimonio municipal</li>
+                                    <li>Bienes inventariables</li>
+                                    <li>Responsabilidad del funcionario a cargo</li>
+                                    <li>Movimientos patrimoniales</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de patrimonio municipal)
+                                </p>
+                                <h4 class="fw-bold">
+                                    Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)
+                                </h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_CUADERNILLO-CURSO-DE-PATRIMONIO.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo del curso PATRIMONIO Municipal
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    José Garaventa - Verónica Anzoátegui - Susana Bergonzi
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 13-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 23 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Recursos Humanos (Primera Parte)</h4>
+                                <ul>
+                                    <li>Convenio colectivo de trabajo</li>
+                                    <li>Personal de planta, coordinado, becado y contratados</li>
+                                    <li>Régimen de licencias anuales</li>
+                                    <li>Régimen de licencias médicas y especiales</li>
+                                    <li>Régimen de asistencia</li>
+                                </ul>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL3-RecursosHumanos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 3 del Digesto Municipal: Recursos Humanos
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Juan Gómez López - Funcionarios a designar
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 14-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
+                                <span class="fs-5 fw-bold">
+                                    Martes 27 de junio
+                                </span>
+                                <i class="ms-2 text-info bi bi-exclamation-circle-fill"></i>
+                                <!-- <span class="bi-info-circle-fill badge rounded-pill text-bg-info ms-1">
+                                    A CONFIRMAR
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h3 class="fw-bold"><i class="ms-2 text-info bi bi-exclamation-circle-fill"></i> Lugar y fecha a confirmar</h3>
+                                <h4 class="fw-bold">Recursos Humanos (Segunda Parte)</h4>
+                                <ul>
+                                    <li>Sanciones menores</li>
+                                    <li>Sumario administrativo</li>
+                                    <li>Desempeño y capacitación del personal</li>
+                                    <li>Programa Culminación</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de sanciones disciplinarias)
+                                </p>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL3-RecursosHumanos.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 3 del Digesto Municipal: Recursos Humanos
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL25-JubilacionMunicipal.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 25 del Digesto Municipal: Jubilación Municipal
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL27-NormasDeCapacitacion.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 27 del Digesto Municipal: Normas de capacitación
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_desempeno_laboral.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Desempeño laboral
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Juan Gómez López - Jorge Spárvoli - Funcionarios a designar
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 15-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 30 de junio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Seguridad e higiene</h4>
+                                <ul>
+                                    <li>Ley de Seguridad e Higiene</li>
+                                    <li>Factores de Riesgo</li>
+                                    <li>Accidente de Trabajo</li>
+                                    <li>Enfermedad de Trabajo</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de Seguridad e higiene)
+                                </p>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/GOB_higiene_seguridad.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Higiene y seguridad en el trabajo (capacitación inicial)
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Sixto Segovia - Funcionarios a designar
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 16-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">
+                                <span class="fs-5 fw-bold">
+                                    Miércoles 5 de julio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD  
+                                <h4 class="fw-bold">Violencia y acoso laboral</h4>
+                                <ul>
+                                    <li>Concepto</li>
+                                    <li>Conductas reprochables</li>
+                                    <li>Prevención</li>
+                                    <li>Denuncia</li>
+                                    <li>Procedimiento</li>
+                                    <li>Tratamiento de la victima</li>
+                                    <li>Buenos tratos</li>
+                                </ul>
+                                <p>
+                                    (Hay un curso autogestionado de Violencia laboral)
+                                </p>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <p>
+                                    Cinthia Toledo - Juan Gómez López - Funcionarios a designar
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM 17-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">
+                                <span class="fs-5 fw-bold">
+                                    Viernes 7 de julio 14hs
+                                </span>
+                                <i class="ms-2 bi bi-check-circle-fill text-success"></i>
+                                <!-- <span class="bi-check-circle-fill badge rounded-pill text-bg-success ms-1">
+                                    CONFIRMADO
+                                </span> -->
+                            </button>
+                        </h2>
+                        <div id="flush-collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <i class="text-danger bi bi-geo-alt-fill"></i> Recinto del HCD
+                                <h4 class="mt-2">Mapa del estado municipal</h4>
+                                <ul>
+                                    <li>Organigrama municipal</li>
+                                    <li>Revisión de las funciones de las reparticiones</li>
+                                    <li>Información sobre titulares de reparticiones</li>
+                                </ul>
+                                <h4 class="fw-bold">Material de apoyo con lectura recomendada previa (Biblioteca
+                                digital)</h4>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL10A-OrganigramaGrafico.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 10 A del Digesto Municipal: Organigrama municipal
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/digesto/VOL10B-OrganigramaFunciones.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 10 B del Digesto Municipal: Organigrama municipal
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="http://biblioteca.malvinasargentinas.ar/gobierno/VOL10C-OrganigramaDecretoAutoridades.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Volumen 10 C del Digesto Municipal: Organigrama municipal
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-info">
+                                        <a href="https://biblioteca.malvinasargentinas.ar/gobierno/organigrama-funciones.pdf" target="_blank">
+                                            <i class="bi bi-paperclip"></i>
+                                            Cuadernillo de Funciones y competencias
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h4 class="fw-bold">Panelistas</h4>
+                                <P>
+                                    Jorge Spárvoli - Funcionarios a designar
+                                </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CIERRE DEL ACORDION -->
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="card border-0 rounded-0 bg-primary" >
+            <div class="row g-0">
+                <div class="col-md-5 col-lg-4">
+                    <img src="./img/header.jpg" class="img-fluid" alt="Honorable Concejo Deliberante">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <div class="card-body text-light">
+                        <div class="container">
+                            <h2>Cierre del programa</h2>
+                            <p>
+                                Miércoles 12 de julio - 14.00 horas 
+                                <br>
+                                <i class="bi bi-geo-alt-fill"></i> Recinto del HCD.
+                                <br>
+                                (Se tramita actualmente hacerlo en el auditorio)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-5">
+        <div class="container d-flex flex-column align-items-center">
+            <h5 class="text-bg-dark text-center">
+                Municipalidad de Malvinas Argentinas
+            </h5>
+            <img class="lugar" src="./img/el-lugar.png" alt="logo el lugar de la familia">
+        </div>
+    </footer>
+
+    <!-- JS FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3feda4009a.js" crossorigin="anonymous"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+    
+    <!-- JS BOOTSTRAP -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
