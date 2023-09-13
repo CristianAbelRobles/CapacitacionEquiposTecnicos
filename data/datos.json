@@ -1,0 +1,44 @@
+[
+    {
+        "calificacion" : 4,
+        "nombre" : "Conitos",
+        "descripcion" : "Una deliciosa opción para acompañar las meriendas, ese antojo de media noche o compartir con amigos.",
+        "imgUrl" : "receta_conito.JPG",
+        "url" : "www.humaya.com"
+    },
+    {
+        "calificacion" : 5,
+        "nombre" : "Pepas",
+        "descripcion" : "Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la hora del té.",
+        "imgUrl" : "receta_pepa.JPG",
+        "url" : "www.humaya.com"
+    },
+    {
+        "calificacion" : 3,
+        "nombre" : "Torta Nutt",
+        "descripcion" : "La torta de tres capas más sabrosa del mundo, combina una base de vainilla, dulce de leche y cubierta de choconutt.",
+        "imgUrl" : "receta_torta.JPG",
+        "url" : "www.humaya.com"
+    },
+    {
+        "calificacion" : 5,
+        "nombre" : "Torta Banoffee",
+        "descripcion" : "La famosa Tarta Banoffee de plátano o banana, por fuera parece ser super sofisticada pero realmente van a ver que es una pavada.",
+        "imgUrl" : "receta_torata_banoffee.JPG",
+        "url" : "www.humaya.com"
+    },
+    {
+        "calificacion" : 4,
+        "nombre" : "Alfajor Artesanal",
+        "descripcion" : "Hoy les proponemos un desafío con sabor a chocolate y dulce de leche ¿Qué dicen?",
+        "imgUrl" : "receta_alfajor_dulce_leche.JPG",
+        "url" : "www.humaya.com"
+    },
+    {
+        "calificacion" : 1,
+        "nombre" : "Flan Casero",
+        "descripcion" : "Con pocos ingredientes y todo el amor del mundo. Si buscas ese sabor auténtico y casero, ¡este es tu postre! ",
+        "imgUrl" : "receta_flan_dulce_leche.JPG",
+        "url" : "www.humaya.com"
+    }
+]
